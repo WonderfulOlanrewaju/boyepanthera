@@ -1,11 +1,11 @@
 import GhostContentAPI from "@tryghost/content-api";
-import {Keys} from '../config';
+import Keys from '../config.js';
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
   url: Keys.url,
-  key: Keys.env.key,
-  version: Keys.env.version
+  key: Keys.key,
+  version: Keys.version
 });
 
 export async function getPosts() {
