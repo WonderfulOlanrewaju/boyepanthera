@@ -1,13 +1,11 @@
 import GhostContentAPI from "@tryghost/content-api";
-import dotenv from 'dotenv';
-
-dotenv.config()
+import {Keys} from '../config';
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: process.env.url,
-  key: process.env.key,
-  version: process.env.version
+  url: Keys.url,
+  key: Keys.env.key,
+  version: Keys.env.version
 });
 
 export async function getPosts() {
