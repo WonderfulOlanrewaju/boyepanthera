@@ -18,3 +18,5 @@ PostPage.getInitialProps = async (params) => {
   const post = await getSinglePost(params.query.slug);
   return { post: post }
 };
+
+export default PostPage;
