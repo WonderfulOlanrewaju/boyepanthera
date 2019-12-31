@@ -1,4 +1,4 @@
-import {getPosts, getSinglePost} from '../api/posts';
+import {getPosts} from '../api/posts';
 import {Link} from 'next/link';
 
 const Index = (props) =>(<div>
